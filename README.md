@@ -1,16 +1,29 @@
-# React + Vite
+ # React Todo App - Version 4
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is **Version 4** of my Todo App built using **React**, **Context API**, and **useReducer**.  
+It demonstrates advanced state management, modular architecture, and modern React practices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Add todos with due date
+- Delete todos
+- Centralized state using React Context API + useReducer
+- Form submit handling (Enter key supported)
+- Component-based architecture:
+  - `App.js`
+  - `AddTodo`
+  - `TodoList`
+  - `TodoItem`
+  - `WelcomeMessage`
+- Conditional rendering for empty list
+- Styled with CSS Modules + Bootstrap 5
+- Scalable, modular Provider component
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- React
+- React Icons (`react-icons`)
+- Bootstrap 5
+- CSS Modules
