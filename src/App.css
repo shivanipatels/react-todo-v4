@@ -1,0 +1,21 @@
+ 
+input{
+  width: 100%;
+}
+
+.items-container{
+  color: blue;
+  text-align: left;
+}
+
+
+.todo-button
+{
+min-width: 100px;
+coursor: pointer;
+}
+
+.todo-row{
+  margin: 10px 5px;
+}
+
