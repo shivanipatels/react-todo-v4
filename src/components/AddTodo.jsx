@@ -31,6 +31,7 @@ function AddTodo() {
               ref={todoNameElement}
               name=""
               id=""
+              required
               placeholder="Enter ToDo Here"
             />
           </div>
@@ -40,6 +41,7 @@ function AddTodo() {
               ref={dueDateElement}
               name=""
               id=""
+              required
             />
           </div>
           <div className="col-2">

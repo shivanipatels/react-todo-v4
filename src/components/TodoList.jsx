@@ -7,9 +7,10 @@ function TodoList() {
   return (
     <>
       <div className="items-container">
-        {todoItems.map((item, index) => (
+        {todoItems.map((item) => (
           <TodoItem
-            key={index}
+            key={item.id}
+            id={item.id}
             todoName={item.name}
             todoDate={item.date}
           ></TodoItem>

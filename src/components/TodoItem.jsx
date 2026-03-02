@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { MdDelete } from "react-icons/md";
 import { TodoItemsContext } from '../store/todo-item-store';
 
-function TodoItem({todoName,todoDate}) {
+function TodoItem({todoName,todoDate,id}) {
   const {deleteItems}=useContext(TodoItemsContext);
   return (
     <div>
@@ -11,7 +11,7 @@ function TodoItem({todoName,todoDate}) {
           <div className="col-6"> {todoName}</div>
           <div className="col-4">{todoDate}</div>
           <div className="col-2">
-            <button onClick={()=>deleteItems(todoName)}
+            <button onClick={()=>deleteItems(id)}
             type="button" className="btn btn-danger todo-button">
               <MdDelete />
             </button>

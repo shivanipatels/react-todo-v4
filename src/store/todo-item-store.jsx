@@ -13,13 +13,14 @@ const todoItemsReducer = (currentTodoItems, action) => {
     newTodoItems = [
       ...currentTodoItems,
       {
+        id: Date.now(),
         name: action.payload.itemName,
         date: action.payload.itemDueDate,
       },
     ];
   } else if (action.type === "DELETE_ITEM") {
     newTodoItems = currentTodoItems.filter(
-      (item) => item.name !== action.payload.itemName,
+      (item) => item.id !== action.payload.id,
     );
   }
   return newTodoItems;
@@ -39,11 +40,11 @@ const TodoItemsContextProvider = ({children}) => {
     dispatchTodoItems(newItemsAction);
   };
 
-  const deleteItems = (todoItemName) => {
+  const deleteItems = (id) => {
     const deleteItemAction = {
       type: "DELETE_ITEM",
       payload: {
-        itemName: todoItemName,
+        id,
       },
     };
     dispatchTodoItems(deleteItemAction);
