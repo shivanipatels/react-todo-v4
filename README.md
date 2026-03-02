@@ -20,6 +20,14 @@ It demonstrates advanced state management, modular architecture, and modern Reac
 - Styled with CSS Modules + Bootstrap 5
 - Scalable, modular Provider component
 
+
+## Version: V5 (In Progress)
+
+### Improvements:
+- Unique ID based deletion
+- Improved reducer structure
+- Removed index key usage
+- Clean component architecture
 ---
 
 ## Tech Stack
